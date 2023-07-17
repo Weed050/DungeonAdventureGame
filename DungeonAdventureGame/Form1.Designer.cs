@@ -87,10 +87,9 @@
             // 
             swordPlayerBar.BackColor = Color.Transparent;
             swordPlayerBar.Image = (Image)resources.GetObject("swordPlayerBar.Image");
-            swordPlayerBar.Location = new Point(272, 467);
-            swordPlayerBar.Margin = new Padding(3, 2, 3, 2);
+            swordPlayerBar.Location = new Point(311, 623);
             swordPlayerBar.Name = "swordPlayerBar";
-            swordPlayerBar.Size = new Size(56, 40);
+            swordPlayerBar.Size = new Size(64, 53);
             swordPlayerBar.SizeMode = PictureBoxSizeMode.Zoom;
             swordPlayerBar.TabIndex = 0;
             swordPlayerBar.TabStop = false;
@@ -100,10 +99,9 @@
             // 
             bowPlayerBar.BackColor = Color.Transparent;
             bowPlayerBar.Image = (Image)resources.GetObject("bowPlayerBar.Image");
-            bowPlayerBar.Location = new Point(342, 467);
-            bowPlayerBar.Margin = new Padding(3, 2, 3, 2);
+            bowPlayerBar.Location = new Point(391, 623);
             bowPlayerBar.Name = "bowPlayerBar";
-            bowPlayerBar.Size = new Size(58, 40);
+            bowPlayerBar.Size = new Size(66, 53);
             bowPlayerBar.SizeMode = PictureBoxSizeMode.Zoom;
             bowPlayerBar.TabIndex = 1;
             bowPlayerBar.TabStop = false;
@@ -112,10 +110,9 @@
             // 
             clubPlayerBar.BackColor = Color.Transparent;
             clubPlayerBar.Image = (Image)resources.GetObject("clubPlayerBar.Image");
-            clubPlayerBar.Location = new Point(413, 467);
-            clubPlayerBar.Margin = new Padding(3, 2, 3, 2);
+            clubPlayerBar.Location = new Point(472, 623);
             clubPlayerBar.Name = "clubPlayerBar";
-            clubPlayerBar.Size = new Size(60, 40);
+            clubPlayerBar.Size = new Size(69, 53);
             clubPlayerBar.SizeMode = PictureBoxSizeMode.Zoom;
             clubPlayerBar.TabIndex = 2;
             clubPlayerBar.TabStop = false;
@@ -124,10 +121,9 @@
             // 
             bigMixturePlayerBar.BackColor = Color.Transparent;
             bigMixturePlayerBar.Image = (Image)resources.GetObject("bigMixturePlayerBar.Image");
-            bigMixturePlayerBar.Location = new Point(494, 468);
-            bigMixturePlayerBar.Margin = new Padding(3, 2, 3, 2);
+            bigMixturePlayerBar.Location = new Point(565, 624);
             bigMixturePlayerBar.Name = "bigMixturePlayerBar";
-            bigMixturePlayerBar.Size = new Size(61, 40);
+            bigMixturePlayerBar.Size = new Size(70, 53);
             bigMixturePlayerBar.SizeMode = PictureBoxSizeMode.Zoom;
             bigMixturePlayerBar.TabIndex = 3;
             bigMixturePlayerBar.TabStop = false;
@@ -136,10 +132,9 @@
             // 
             smallMixturePlayerBar.BackColor = Color.Transparent;
             smallMixturePlayerBar.Image = (Image)resources.GetObject("smallMixturePlayerBar.Image");
-            smallMixturePlayerBar.Location = new Point(571, 467);
-            smallMixturePlayerBar.Margin = new Padding(3, 2, 3, 2);
+            smallMixturePlayerBar.Location = new Point(653, 623);
             smallMixturePlayerBar.Name = "smallMixturePlayerBar";
-            smallMixturePlayerBar.Size = new Size(61, 40);
+            smallMixturePlayerBar.Size = new Size(70, 53);
             smallMixturePlayerBar.SizeMode = PictureBoxSizeMode.Zoom;
             smallMixturePlayerBar.TabIndex = 4;
             smallMixturePlayerBar.TabStop = false;
@@ -151,30 +146,29 @@
             HpPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             HpPanel.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             HpPanel.Controls.Add(playerHitPoints, 1, 0);
-            HpPanel.Controls.Add(label1, 0, 0);
             HpPanel.Controls.Add(bat, 0, 1);
             HpPanel.Controls.Add(batHitPoints, 1, 1);
             HpPanel.Controls.Add(label2, 0, 2);
             HpPanel.Controls.Add(ghostHitPoints, 1, 2);
             HpPanel.Controls.Add(label3, 0, 3);
             HpPanel.Controls.Add(reaverHitPoints, 1, 3);
-            HpPanel.Location = new Point(972, 436);
-            HpPanel.Margin = new Padding(3, 2, 3, 2);
+            HpPanel.Controls.Add(label1, 0, 0);
+            HpPanel.Location = new Point(1111, 581);
             HpPanel.Name = "HpPanel";
             HpPanel.RowCount = 4;
-            HpPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            HpPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            HpPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 15F));
-            HpPanel.RowStyles.Add(new RowStyle(SizeType.Absolute, 15F));
-            HpPanel.Size = new Size(137, 86);
+            HpPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
+            HpPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
+            HpPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
+            HpPanel.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
+            HpPanel.Size = new Size(157, 115);
             HpPanel.TabIndex = 5;
             // 
             // playerHitPoints
             // 
             playerHitPoints.AutoSize = true;
-            playerHitPoints.Location = new Point(71, 0);
+            playerHitPoints.Location = new Point(81, 0);
             playerHitPoints.Name = "playerHitPoints";
-            playerHitPoints.Size = new Size(62, 28);
+            playerHitPoints.Size = new Size(70, 28);
             playerHitPoints.TabIndex = 1;
             playerHitPoints.Text = "playerHitPoints";
             // 
@@ -183,7 +177,7 @@
             label1.AutoSize = true;
             label1.Location = new Point(3, 0);
             label1.Name = "label1";
-            label1.Size = new Size(39, 15);
+            label1.Size = new Size(49, 20);
             label1.TabIndex = 0;
             label1.Text = "Player";
             // 
@@ -191,16 +185,16 @@
             // 
             bat.Location = new Point(3, 28);
             bat.Name = "bat";
-            bat.Size = new Size(43, 15);
+            bat.Size = new Size(49, 20);
             bat.TabIndex = 2;
             bat.Text = "Bat";
             // 
             // batHitPoints
             // 
             batHitPoints.AutoSize = true;
-            batHitPoints.Location = new Point(71, 28);
+            batHitPoints.Location = new Point(81, 28);
             batHitPoints.Name = "batHitPoints";
-            batHitPoints.Size = new Size(57, 28);
+            batHitPoints.Size = new Size(71, 28);
             batHitPoints.TabIndex = 3;
             batHitPoints.Text = "batHitPoints";
             // 
@@ -209,34 +203,34 @@
             label2.AutoSize = true;
             label2.Location = new Point(3, 56);
             label2.Name = "label2";
-            label2.Size = new Size(38, 15);
+            label2.Size = new Size(47, 20);
             label2.TabIndex = 4;
             label2.Text = "Ghost";
             // 
             // ghostHitPoints
             // 
             ghostHitPoints.AutoSize = true;
-            ghostHitPoints.Location = new Point(71, 56);
+            ghostHitPoints.Location = new Point(81, 56);
             ghostHitPoints.Name = "ghostHitPoints";
-            ghostHitPoints.Size = new Size(60, 15);
+            ghostHitPoints.Size = new Size(66, 28);
             ghostHitPoints.TabIndex = 5;
             ghostHitPoints.Text = "ghostHitPoints";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(3, 71);
+            label3.Location = new Point(3, 84);
             label3.Name = "label3";
-            label3.Size = new Size(43, 15);
+            label3.Size = new Size(56, 20);
             label3.TabIndex = 6;
             label3.Text = "Reaper";
             // 
             // reaverHitPoints
             // 
             reaverHitPoints.AutoSize = true;
-            reaverHitPoints.Location = new Point(71, 71);
+            reaverHitPoints.Location = new Point(81, 84);
             reaverHitPoints.Name = "reaverHitPoints";
-            reaverHitPoints.Size = new Size(63, 15);
+            reaverHitPoints.Size = new Size(72, 31);
             reaverHitPoints.TabIndex = 7;
             reaverHitPoints.Text = "reaperHitPoints";
             // 
@@ -248,50 +242,44 @@
             movePanel.Controls.Add(moveBottomBtn);
             movePanel.Controls.Add(moveTopBtn);
             movePanel.Controls.Add(label4);
-            movePanel.Location = new Point(637, 448);
-            movePanel.Margin = new Padding(3, 2, 3, 2);
+            movePanel.Location = new Point(728, 597);
             movePanel.Name = "movePanel";
-            movePanel.Padding = new Padding(3, 2, 3, 2);
-            movePanel.Size = new Size(153, 74);
+            movePanel.Size = new Size(175, 99);
             movePanel.TabIndex = 6;
             movePanel.TabStop = false;
             // 
             // moveRightBtn
             // 
-            moveRightBtn.Location = new Point(103, 25);
-            moveRightBtn.Margin = new Padding(3, 2, 3, 2);
+            moveRightBtn.Location = new Point(118, 33);
             moveRightBtn.Name = "moveRightBtn";
-            moveRightBtn.Size = new Size(45, 38);
+            moveRightBtn.Size = new Size(51, 51);
             moveRightBtn.TabIndex = 4;
             moveRightBtn.Text = "▶️";
             moveRightBtn.UseVisualStyleBackColor = true;
             // 
             // moveLeftBtn
             // 
-            moveLeftBtn.Location = new Point(5, 25);
-            moveLeftBtn.Margin = new Padding(3, 2, 3, 2);
+            moveLeftBtn.Location = new Point(6, 33);
             moveLeftBtn.Name = "moveLeftBtn";
-            moveLeftBtn.Size = new Size(45, 38);
+            moveLeftBtn.Size = new Size(51, 51);
             moveLeftBtn.TabIndex = 3;
             moveLeftBtn.Text = "◀️";
             moveLeftBtn.UseVisualStyleBackColor = true;
             // 
             // moveBottomBtn
             // 
-            moveBottomBtn.Location = new Point(51, 44);
-            moveBottomBtn.Margin = new Padding(3, 2, 3, 2);
+            moveBottomBtn.Location = new Point(58, 59);
             moveBottomBtn.Name = "moveBottomBtn";
-            moveBottomBtn.Size = new Size(47, 30);
+            moveBottomBtn.Size = new Size(54, 40);
             moveBottomBtn.TabIndex = 2;
             moveBottomBtn.Text = "🔽";
             moveBottomBtn.UseVisualStyleBackColor = true;
             // 
             // moveTopBtn
             // 
-            moveTopBtn.Location = new Point(51, 14);
-            moveTopBtn.Margin = new Padding(3, 2, 3, 2);
+            moveTopBtn.Location = new Point(58, 19);
             moveTopBtn.Name = "moveTopBtn";
-            moveTopBtn.Size = new Size(47, 31);
+            moveTopBtn.Size = new Size(54, 41);
             moveTopBtn.TabIndex = 1;
             moveTopBtn.Text = "🔼";
             moveTopBtn.UseVisualStyleBackColor = true;
@@ -300,9 +288,9 @@
             // 
             label4.AutoSize = true;
             label4.BackColor = Color.White;
-            label4.Location = new Point(5, 2);
+            label4.Location = new Point(6, 3);
             label4.Name = "label4";
-            label4.Size = new Size(37, 15);
+            label4.Size = new Size(46, 20);
             label4.TabIndex = 0;
             label4.Text = "Move";
             // 
@@ -315,50 +303,44 @@
             hitPanel.Controls.Add(hitOnTopBtn);
             hitPanel.Controls.Add(label5);
             hitPanel.ForeColor = SystemColors.ActiveCaptionText;
-            hitPanel.Location = new Point(804, 448);
-            hitPanel.Margin = new Padding(3, 2, 3, 2);
+            hitPanel.Location = new Point(919, 597);
             hitPanel.Name = "hitPanel";
-            hitPanel.Padding = new Padding(3, 2, 3, 2);
-            hitPanel.Size = new Size(153, 74);
+            hitPanel.Size = new Size(175, 99);
             hitPanel.TabIndex = 7;
             hitPanel.TabStop = false;
             // 
             // hitOnRightBtn
             // 
-            hitOnRightBtn.Location = new Point(109, 25);
-            hitOnRightBtn.Margin = new Padding(3, 2, 3, 2);
+            hitOnRightBtn.Location = new Point(125, 33);
             hitOnRightBtn.Name = "hitOnRightBtn";
-            hitOnRightBtn.Size = new Size(38, 34);
+            hitOnRightBtn.Size = new Size(43, 45);
             hitOnRightBtn.TabIndex = 8;
             hitOnRightBtn.Text = "▶️";
             hitOnRightBtn.UseVisualStyleBackColor = true;
             // 
             // hitOnLeftBtn
             // 
-            hitOnLeftBtn.Location = new Point(5, 25);
-            hitOnLeftBtn.Margin = new Padding(3, 2, 3, 2);
+            hitOnLeftBtn.Location = new Point(6, 33);
             hitOnLeftBtn.Name = "hitOnLeftBtn";
-            hitOnLeftBtn.Size = new Size(46, 34);
+            hitOnLeftBtn.Size = new Size(53, 45);
             hitOnLeftBtn.TabIndex = 7;
             hitOnLeftBtn.Text = "◀️";
             hitOnLeftBtn.UseVisualStyleBackColor = true;
             // 
             // hitOnBottomBtn
             // 
-            hitOnBottomBtn.Location = new Point(57, 44);
-            hitOnBottomBtn.Margin = new Padding(3, 2, 3, 2);
+            hitOnBottomBtn.Location = new Point(65, 59);
             hitOnBottomBtn.Name = "hitOnBottomBtn";
-            hitOnBottomBtn.Size = new Size(47, 28);
+            hitOnBottomBtn.Size = new Size(54, 37);
             hitOnBottomBtn.TabIndex = 6;
             hitOnBottomBtn.Text = "🔽";
             hitOnBottomBtn.UseVisualStyleBackColor = true;
             // 
             // hitOnTopBtn
             // 
-            hitOnTopBtn.Location = new Point(57, 14);
-            hitOnTopBtn.Margin = new Padding(3, 2, 3, 2);
+            hitOnTopBtn.Location = new Point(65, 19);
             hitOnTopBtn.Name = "hitOnTopBtn";
-            hitOnTopBtn.Size = new Size(47, 31);
+            hitOnTopBtn.Size = new Size(54, 41);
             hitOnTopBtn.TabIndex = 5;
             hitOnTopBtn.Text = "🔼";
             hitOnTopBtn.UseVisualStyleBackColor = true;
@@ -367,9 +349,9 @@
             // 
             label5.AutoSize = true;
             label5.BackColor = Color.White;
-            label5.Location = new Point(5, 2);
+            label5.Location = new Point(6, 3);
             label5.Name = "label5";
-            label5.Size = new Size(23, 15);
+            label5.Size = new Size(29, 20);
             label5.TabIndex = 0;
             label5.Text = "Hit";
             // 
@@ -377,9 +359,10 @@
             // 
             playerOnStage.BackColor = Color.Transparent;
             playerOnStage.Image = (Image)resources.GetObject("playerOnStage.Image");
-            playerOnStage.Location = new Point(177, 93);
+            playerOnStage.Location = new Point(202, 124);
+            playerOnStage.Margin = new Padding(3, 4, 3, 4);
             playerOnStage.Name = "playerOnStage";
-            playerOnStage.Size = new Size(83, 70);
+            playerOnStage.Size = new Size(95, 93);
             playerOnStage.SizeMode = PictureBoxSizeMode.Zoom;
             playerOnStage.TabIndex = 8;
             playerOnStage.TabStop = false;
@@ -389,9 +372,10 @@
             // 
             batOnStage.BackColor = Color.Transparent;
             batOnStage.Image = (Image)resources.GetObject("batOnStage.Image");
-            batOnStage.Location = new Point(272, 93);
+            batOnStage.Location = new Point(311, 124);
+            batOnStage.Margin = new Padding(3, 4, 3, 4);
             batOnStage.Name = "batOnStage";
-            batOnStage.Size = new Size(85, 70);
+            batOnStage.Size = new Size(97, 93);
             batOnStage.SizeMode = PictureBoxSizeMode.Zoom;
             batOnStage.TabIndex = 9;
             batOnStage.TabStop = false;
@@ -401,9 +385,10 @@
             // 
             reaperOnStage.BackColor = Color.Transparent;
             reaperOnStage.Image = (Image)resources.GetObject("reaperOnStage.Image");
-            reaperOnStage.Location = new Point(373, 93);
+            reaperOnStage.Location = new Point(426, 124);
+            reaperOnStage.Margin = new Padding(3, 4, 3, 4);
             reaperOnStage.Name = "reaperOnStage";
-            reaperOnStage.Size = new Size(90, 70);
+            reaperOnStage.Size = new Size(103, 93);
             reaperOnStage.SizeMode = PictureBoxSizeMode.Zoom;
             reaperOnStage.TabIndex = 10;
             reaperOnStage.TabStop = false;
@@ -413,10 +398,9 @@
             // 
             bigPotionOnStage.BackColor = Color.Transparent;
             bigPotionOnStage.Image = (Image)resources.GetObject("bigPotionOnStage.Image");
-            bigPotionOnStage.Location = new Point(481, 93);
-            bigPotionOnStage.Margin = new Padding(3, 2, 3, 2);
+            bigPotionOnStage.Location = new Point(550, 124);
             bigPotionOnStage.Name = "bigPotionOnStage";
-            bigPotionOnStage.Size = new Size(74, 70);
+            bigPotionOnStage.Size = new Size(85, 93);
             bigPotionOnStage.SizeMode = PictureBoxSizeMode.Zoom;
             bigPotionOnStage.TabIndex = 11;
             bigPotionOnStage.TabStop = false;
@@ -426,10 +410,9 @@
             // 
             smallPotionOnStage.BackColor = Color.Transparent;
             smallPotionOnStage.Image = (Image)resources.GetObject("smallPotionOnStage.Image");
-            smallPotionOnStage.Location = new Point(571, 93);
-            smallPotionOnStage.Margin = new Padding(3, 2, 3, 2);
+            smallPotionOnStage.Location = new Point(653, 124);
             smallPotionOnStage.Name = "smallPotionOnStage";
-            smallPotionOnStage.Size = new Size(81, 70);
+            smallPotionOnStage.Size = new Size(93, 93);
             smallPotionOnStage.SizeMode = PictureBoxSizeMode.Zoom;
             smallPotionOnStage.TabIndex = 12;
             smallPotionOnStage.TabStop = false;
@@ -439,10 +422,9 @@
             // 
             swordOnStage.BackColor = Color.Transparent;
             swordOnStage.Image = (Image)resources.GetObject("swordOnStage.Image");
-            swordOnStage.Location = new Point(658, 93);
-            swordOnStage.Margin = new Padding(3, 2, 3, 2);
+            swordOnStage.Location = new Point(752, 124);
             swordOnStage.Name = "swordOnStage";
-            swordOnStage.Size = new Size(77, 70);
+            swordOnStage.Size = new Size(88, 93);
             swordOnStage.SizeMode = PictureBoxSizeMode.Zoom;
             swordOnStage.TabIndex = 13;
             swordOnStage.TabStop = false;
@@ -452,10 +434,9 @@
             // 
             bowOnStage.BackColor = Color.Transparent;
             bowOnStage.Image = (Image)resources.GetObject("bowOnStage.Image");
-            bowOnStage.Location = new Point(741, 93);
-            bowOnStage.Margin = new Padding(3, 2, 3, 2);
+            bowOnStage.Location = new Point(847, 124);
             bowOnStage.Name = "bowOnStage";
-            bowOnStage.Size = new Size(79, 70);
+            bowOnStage.Size = new Size(90, 93);
             bowOnStage.SizeMode = PictureBoxSizeMode.Zoom;
             bowOnStage.TabIndex = 14;
             bowOnStage.TabStop = false;
@@ -465,10 +446,9 @@
             // 
             clubOnStage.BackColor = Color.Transparent;
             clubOnStage.Image = (Image)resources.GetObject("clubOnStage.Image");
-            clubOnStage.Location = new Point(826, 93);
-            clubOnStage.Margin = new Padding(3, 2, 3, 2);
+            clubOnStage.Location = new Point(944, 124);
             clubOnStage.Name = "clubOnStage";
-            clubOnStage.Size = new Size(82, 70);
+            clubOnStage.Size = new Size(94, 93);
             clubOnStage.SizeMode = PictureBoxSizeMode.Zoom;
             clubOnStage.TabIndex = 15;
             clubOnStage.TabStop = false;
@@ -478,9 +458,10 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(918, 93);
+            pictureBox1.Location = new Point(1049, 124);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(87, 70);
+            pictureBox1.Size = new Size(99, 93);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 16;
             pictureBox1.TabStop = false;
@@ -488,20 +469,17 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1274, 529);
+            ClientSize = new Size(1456, 705);
+            Controls.Add(playerOnStage);
             Controls.Add(pictureBox1);
-            Controls.Add(clubOnStage);
-            Controls.Add(bowOnStage);
-            Controls.Add(swordOnStage);
             Controls.Add(smallPotionOnStage);
             Controls.Add(bigPotionOnStage);
             Controls.Add(reaperOnStage);
             Controls.Add(batOnStage);
-            Controls.Add(playerOnStage);
             Controls.Add(hitPanel);
             Controls.Add(movePanel);
             Controls.Add(HpPanel);
@@ -510,8 +488,10 @@
             Controls.Add(clubPlayerBar);
             Controls.Add(bowPlayerBar);
             Controls.Add(swordPlayerBar);
+            Controls.Add(clubOnStage);
+            Controls.Add(bowOnStage);
+            Controls.Add(swordOnStage);
             DoubleBuffered = true;
-            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "Dungeon Adventure Game";
             ((System.ComponentModel.ISupportInitialize)swordPlayerBar).EndInit();
