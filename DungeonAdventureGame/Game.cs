@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using DungeonAdventureGame.Enemies;
+using DungeonAdventureGame.Players;
 using DungeonAdventureGame.Weapons;
 
 namespace DungeonAdventureGame
@@ -72,7 +73,9 @@ namespace DungeonAdventureGame
                     Enemies = new List<Enemy>();
                     //Enemies.Concat(new Ghost(this,getRandomLocation(random)));
                     Enemies = Enemies.Concat(new[] { new Ghost(this, getRandomLocation(random)) });
-                    WeaponInRoom = new SmallMixture(this, getRandomLocation(random));
+
+                    if (!CheckPlayerInventory("BigMixture") && !CheckPlayerInventory("SmallMixture"))
+                        WeaponInRoom = new SmallMixture(this, getRandomLocation(random));
                     break;
                 case 3:
                     Enemies = new List<Enemy>();
@@ -84,18 +87,55 @@ namespace DungeonAdventureGame
                     Enemies = new List<Enemy>();
                     Enemies = Enemies.Concat(new[] { new Bat(this, getRandomLocation(random)) });
                     Enemies = Enemies.Concat(new[] { new Ghost(this, getRandomLocation(random)) });
-                    foreach (var weapon in player.Weapon)
-                        if (weapon == "Bow")
-                            WeaponInRoom = new Bow(this, getRandomLocation(random));
+                    if (!CheckPlayerInventory("Bow"))
+                        WeaponInRoom = new Bow(this, getRandomLocation(random));
+                    else if (!CheckPlayerInventory("BigMixture") && !CheckPlayerInventory("SmallMixture"))
+                        WeaponInRoom = new SmallMixture(this, getRandomLocation(random));
+                    break;
+                case 5:
+
+                    Enemies = new List<Enemy>();
+                    Enemies = Enemies.Concat(new[] { new Bat(this, getRandomLocation(random)) });
+                    Enemies = Enemies.Concat(new[] { new Reaper(this, getRandomLocation(random)) });
+
+                    if (!CheckPlayerInventory("BigMixture") && !CheckPlayerInventory("SmallMixture"))
+                        WeaponInRoom = new BigMixture(this, getRandomLocation(random));
+
+                    break;
+                case 6:
+
+                    Enemies = new List<Enemy>();
+                    Enemies = Enemies.Concat(new[] { new Ghost(this, getRandomLocation(random)) });
+                    Enemies = Enemies.Concat(new[] { new Reaper(this, getRandomLocation(random)) });
+
+                    WeaponInRoom = new Club(this, getRandomLocation(random));
+
+                    break;
+
+                case 7:
+
+                    Enemies = new List<Enemy>();
+                    Enemies = Enemies.Concat(new[] { new Bat(this, getRandomLocation(random)) });
+                    Enemies = Enemies.Concat(new[] { new Ghost(this, getRandomLocation(random)) });
+                    Enemies = Enemies.Concat(new[] { new Reaper(this, getRandomLocation(random)) });
+
+                    if (!CheckPlayerInventory("Club"))
+                        WeaponInRoom = new Club(this, getRandomLocation(random));
+                    else if (!CheckPlayerInventory("BigMixture") && !CheckPlayerInventory("SmallMixture"))
+                        WeaponInRoom = new BigMixture(this, getRandomLocation(random));
+
+                    break;
+                case 8:
+                    Application.Exit();
                     break;
             }
         }
     }
     enum Direction
     {
-        Left,
-        Right,
         Up,
+        Right,
         Down,
+        Left,
     }
 }

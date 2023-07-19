@@ -36,13 +36,13 @@
             smallMixturePlayerBar = new PictureBox();
             HpPanel = new TableLayoutPanel();
             playerHitPoints = new Label();
-            label1 = new Label();
             bat = new Label();
             batHitPoints = new Label();
             label2 = new Label();
             ghostHitPoints = new Label();
             label3 = new Label();
             reaverHitPoints = new Label();
+            label1 = new Label();
             movePanel = new GroupBox();
             moveRightBtn = new Button();
             moveLeftBtn = new Button();
@@ -172,15 +172,6 @@
             playerHitPoints.TabIndex = 1;
             playerHitPoints.Text = "playerHitPoints";
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(3, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(49, 20);
-            label1.TabIndex = 0;
-            label1.Text = "Player";
-            // 
             // bat
             // 
             bat.Location = new Point(3, 28);
@@ -233,6 +224,15 @@
             reaverHitPoints.Size = new Size(72, 31);
             reaverHitPoints.TabIndex = 7;
             reaverHitPoints.Text = "reaperHitPoints";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(3, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(49, 20);
+            label1.TabIndex = 0;
+            label1.Text = "Player";
             // 
             // movePanel
             // 
