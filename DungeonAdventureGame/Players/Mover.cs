@@ -12,7 +12,7 @@ namespace DungeonAdventureGame.Players
         private const int MoveInterval = 10;
         public Point Location { get => location; }
 
-        private Point location;
+        protected Point location;
 
         public Mover(Game game,Point point)
         {
@@ -35,9 +35,24 @@ namespace DungeonAdventureGame.Players
             switch (direction)
             {
                 case Direction.Up:
-                    
+                    if (newLocation.Y - MoveInterval >= boudaries.Top)
+                        newLocation.Y -= MoveInterval;
                     break;
+                case Direction.Down:
+                    if (newLocation.Y + MoveInterval >= boudaries.Bottom)
+                        newLocation.Y += MoveInterval;
+                    break;
+                case Direction.Left:
+                    if (newLocation.X - MoveInterval >= boudaries.Left)
+                        newLocation.X -= MoveInterval;
+                    break;
+                case Direction.Right:
+                    if (newLocation.X + MoveInterval >= boudaries.Right)
+                        newLocation.X += MoveInterval;
+                    break;
+                    default: break;
             }
+            return newLocation;
         }
     }
 }
