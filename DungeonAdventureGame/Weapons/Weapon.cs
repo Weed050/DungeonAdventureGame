@@ -9,6 +9,7 @@ namespace DungeonAdventureGame.Weapons
 {
     abstract class Weapon : Mover
     {
+        public int maxDmg; // tymczasowe
         public Point Location { get => location; }
         private Point location;
         public bool PickedUp { get; set; }

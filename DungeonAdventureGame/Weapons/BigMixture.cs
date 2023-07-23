@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace DungeonAdventureGame.Weapons
 {
-    class BigMixture
+    class BigMixture : Weapon, IPotion
     {
+
     }
 }
