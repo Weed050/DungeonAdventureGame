@@ -44,7 +44,7 @@ namespace DungeonAdventureGame.Players
             base.location = Move(direction, game.Boundaries);
 
             if (!game.WeaponInRoom.PickedUp)
-                if (game.WeaponInRoom.Location == this.location || this.Nearby(game.WeaponInRoom.Location, 1)
+                if (game.WeaponInRoom.Location == this.location || this.Nearby(game.WeaponInRoom.Location, 1))
                         Equip(game.WeaponInRoom.Name);
         }
         public void Attack(Direction direction, Random random)
@@ -60,11 +60,30 @@ namespace DungeonAdventureGame.Players
                 {
                     foreach (var enemy in game.Enemies)
                     {
-                        if ((direction == Direction.Up) && (this.location.Y < enemy.Location.Y) && ((this.location.Y - enemy.Location.Y) <= 1))
-                            enemy.Hit(equipedWeapon.maxDmg, random);
+                        switch (direction)
+                        {
+                            case (Direction.Up):
+                                if ((this.location.Y < enemy.Location.Y) && ((enemy.Location.Y - this.location.Y) <= 10))
+                                    enemy.Hit(equipedWeapon.maxDmg, random);
+                                break;
+                            case (Direction.Down):
+                                if ((this.location.Y > enemy.Location.Y) && ((this.location.Y - enemy.Location.Y) <= 10))
+                                    enemy.Hit(equipedWeapon.maxDmg, random);
+                                break;
+                            case (Direction.Left):
+                                if ((this.location.X > enemy.Location.X) && ((this.location.X - enemy.Location.X) <= 10))
+                                    enemy.Hit(equipedWeapon.maxDmg, random);
+                                break;
+                            case (Direction.Right):
+                                if ((this.location.X < enemy.Location.X) && ((this.location.X - enemy.Location.X) <= 10))
+                                    enemy.Hit(equipedWeapon.maxDmg, random);
+                                break;
+
+                        }
+                        break;
 
                     }
-                    
+
 
                 }
             }
