@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DungeonAdventureGame.Weapons
 {
-    class Club
+    class Club : Weapon
     {
         //  (ENG)club ==  (PL)maczuga
     }

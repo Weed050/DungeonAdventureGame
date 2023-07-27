@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DungeonAdventureGame.Weapons
 {
-    interface IPotion
+    interface IPotion 
     {
 
     }

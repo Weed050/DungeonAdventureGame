@@ -28,6 +28,24 @@ namespace DungeonAdventureGame.Players
             else
                 return false;
         }
+        public bool Nearby(Point locationToCheck, Point targetToCheck,int distanseBetween)
+        {
+            Point someLocation = location;
+            this.location = targetToCheck;
+           bool yesNo = Nearby(locationToCheck, distanseBetween);
+            this.location = someLocation;
+            return yesNo;
+        }
+        public virtual Point Move(Direction direction,Point target, Rectangle boudaries)
+        {
+            // nie działa
+            Point pointLocation = location;
+            location = target;
+            Point point = Move(direction, boudaries);
+            location = pointLocation;
+            return point;
+        }
+
 
         public virtual Point Move(Direction direction, Rectangle boudaries)
         {
@@ -39,7 +57,7 @@ namespace DungeonAdventureGame.Players
                         newLocation.Y -= MoveInterval;
                     break;
                 case Direction.Down:
-                    if (newLocation.Y + MoveInterval >= boudaries.Bottom)
+                    if (newLocation.Y + MoveInterval <= boudaries.Bottom)
                         newLocation.Y += MoveInterval;
                     break;
                 case Direction.Left:
@@ -47,7 +65,7 @@ namespace DungeonAdventureGame.Players
                         newLocation.X -= MoveInterval;
                     break;
                 case Direction.Right:
-                    if (newLocation.X + MoveInterval >= boudaries.Right)
+                    if (newLocation.X + MoveInterval <= boudaries.Right)
                         newLocation.X += MoveInterval;
                     break;
                     default: break;

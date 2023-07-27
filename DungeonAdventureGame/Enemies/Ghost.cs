@@ -29,7 +29,6 @@ namespace DungeonAdventureGame.Enemies
                 switch (i)
                 {
                     case 0:
-                        base.Move((Direction)random.Next(0, 4), game.Boundaries);
                         break;
                     case 1:
                         base.Move(FindPlayerDirection(game.PlayerLocation), game.Boundaries);
