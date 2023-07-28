@@ -19,6 +19,7 @@ namespace DungeonAdventureGame.Weapons
         public Weapon(Game game,Point location):base(game, location)
         {
             PickedUp = false;
+          
         }
 
         protected bool DamageEnemy(Direction direction,Random random,int damage,int radius)

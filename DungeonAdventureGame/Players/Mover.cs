@@ -36,6 +36,8 @@ namespace DungeonAdventureGame.Players
             this.location = someLocation;
             return yesNo;
         }
+
+        // do poprawienia
         public virtual Point Move(Direction direction,Point target, Rectangle boudaries)
         {
             // nie działa
